@@ -36,13 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		852915A51D4670E400871559 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 21CC429F17DB874300201DDC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21632D971C925A3C00C40D7D;
-			remoteInfo = "SAMKeychain-tvOS";
-		};
 		852915A11D4670A700871559 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 21CC429F17DB874300201DDC /* Project object */;
@@ -56,6 +49,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E8A6666E1A844E4100287CA3;
 			remoteInfo = "SAMKeychain-OSX";
+		};
+		852915A51D4670E400871559 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21CC429F17DB874300201DDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21632D971C925A3C00C40D7D;
+			remoteInfo = "SAMKeychain-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -563,11 +563,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		852915A61D4670E400871559 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 21632D971C925A3C00C40D7D /* SAMKeychain-tvOS */;
-			targetProxy = 852915A51D4670E400871559 /* PBXContainerItemProxy */;
-		};
 		852915A21D4670A700871559 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E8A666331A844CC400287CA3 /* SAMKeychain-iOS */;
@@ -577,6 +572,11 @@
 			isa = PBXTargetDependency;
 			target = E8A6666E1A844E4100287CA3 /* SAMKeychain-OSX */;
 			targetProxy = 852915A31D4670C500871559 /* PBXContainerItemProxy */;
+		};
+		852915A61D4670E400871559 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21632D971C925A3C00C40D7D /* SAMKeychain-tvOS */;
+			targetProxy = 852915A51D4670E400871559 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1006,6 +1006,7 @@
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
